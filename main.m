@@ -19,9 +19,16 @@ xlabel("x");
 ylabel("f(x)");
 legend("Location", "best");
 
-%% Testy
+%% Testy NewtonRaphson1
+clc;
 
 f   = @(x) (4*x^3 + 1*x^2 + 2*x + 8);
 df  = @(x) (12*x^2 + 2*x + 2);
 
-[x0, b] = NewtonRaphson1(f, df, 1, 6, 10^(-8))
+[x0, b] = NewtonRaphson1(f, df, 1, 2, 10^(-8))
+
+%% Testy bisekcji
+clc;
+f   = @(x) (4*x^3 + 1*x^2 + 2*x + 8);
+
+[x0, b] = bisekcja(f, -2, 2, 5, 10^(-8))
