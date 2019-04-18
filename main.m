@@ -9,6 +9,16 @@ f   = @(x) (3.55*x^3 - 1.1*x^2 - 0.765*x + 0.74);
 df  = @(x) (10.65*x^2 - 2.2*x - 0.765);
 ddf = @(x) (21.3*x - 2.2);
 
+%Przebieg funkcji w podanej dziedzinie
+x = linspace(-1, 1, 2000);
+y = arrayfun(f, x);
+
+plot(x, y, "-", "DisplayName", "f(x) = 3.55*x^3 - 1.1*x^2 - 0.765*x + 0.74");
+grid on;
+xlabel("x");
+ylabel("f(x)");
+legend("Location", "best");
+
 %% Testy
 
 f   = @(x) (4*x^3 + 1*x^2 + 2*x + 8);
