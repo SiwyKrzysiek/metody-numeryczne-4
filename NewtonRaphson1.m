@@ -4,7 +4,7 @@ function [miejsceZerowe, bledyRozwiazan] = NewtonRaphson1(f, df, x0, maksIteracj
 miejsceZerowe = x0;
 
 %B??dy rozi?za? b?d? warto?ciamy bezwzgl?dnymy f(xi)
-bledy = zeros(1, maksIteracji);
+bledy = zeros(1, maksIteracji+1);
 bledy(1) = abs(f(miejsceZerowe));
 
 i = 1;
