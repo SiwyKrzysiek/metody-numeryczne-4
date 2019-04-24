@@ -1,7 +1,7 @@
-%% Zadanie przyk?adowe A
+%% Zadanie przykladowe A
 
-% Szukana funkcja: 1,1x^2+0,765x = 3,55x^3+0.74     x nale?y do <-1, 1>
-% Przekszta?cenie: 3,55x^3 - 1,1x^2 - 0,765x + 0,74 = 0
+% Szukana funkcja: 1,1x^2+0,765x = 3,55x^3+0.74     x nalezy do <-1, 1>
+% Przeksztalcenie: 3,55x^3 - 1,1x^2 - 0,765x + 0,74 = 0
 % f'(x): 10.65 x^2 - 2.2 x - 0.765
 % f''(x):  21.3 x - 2.2
 

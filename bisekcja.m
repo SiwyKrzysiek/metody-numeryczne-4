@@ -3,7 +3,7 @@ function [miejsceZerowe, bledyRozwiazan] = bisekcja(f, a, b, maksIteracji, eps)
 
 s = (a + b) / 2;
 bledy = zeros(1, maksIteracji);
-bledy(1) = abs(f(s)); %Poniewa? ju? na pocz?tku mo?e by? poni?ej eps
+bledy(1) = abs(f(s)); %Poniewaz juz na poczatku moze byc ponizej eps
 
 i = 1;
 while (abs(f(s)) > eps) && (i <= maksIteracji)

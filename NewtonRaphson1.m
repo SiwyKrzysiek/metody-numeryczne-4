@@ -1,9 +1,9 @@
 function [miejsceZerowe, bledyRozwiazan] = NewtonRaphson1(f, df, x0, maksIteracji, eps)
-%NEWTONRAPSOD1 Znajdowanie miejsca zerowego metod? Newtona-Raphsona I rz?du
+%NEWTONRAPSOD1 Znajdowanie miejsca zerowego metoda Newtona-Raphsona I rzedu
 
 miejsceZerowe = x0;
 
-%B??dy rozi?za? b?d? warto?ciamy bezwzgl?dnymy f(xi)
+%Bledy roziazan beda wartosciamy bezwzglednymy f(xi)
 bledy = zeros(1, maksIteracji+1);
 bledy(1) = abs(f(miejsceZerowe));
 
