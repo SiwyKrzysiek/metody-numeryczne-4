@@ -57,3 +57,16 @@ clc;
 f   = @(x) (4*x^3 + 1*x^2 + 2*x + 8);
 
 [x0, b] = bisekcja(f, -2, 2, 5, 10^(-8))
+
+%% Test po??czenia
+clc;
+
+f   = @(x) (4*x^3 + 1*x^2 + 2*x + 8);
+df  = @(x) (12*x^2 + 2*x + 2);
+
+[x0, b] = polaczoneMetody(f, df, -2, 2, 10000, 10^(-8), 0.001)
+x0
+
+
+
+
